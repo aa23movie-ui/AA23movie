@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#180705" />
+  <meta name="description" content="AA23 — official movie website." />
+  <title>AA23 — I Say 23</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="site-shell">
+    <div class="still-bg" aria-hidden="true"></div>
+    <video class="bg-video" id="movieVideo" playsinline loop preload="metadata" poster="assets/aa23-background.png">
+      <source src="video/aa23-background.mp4" type="video/mp4" />
+    </video>
+    <div class="shade" aria-hidden="true"></div>
+
+    <section class="intro" id="intro" aria-label="Enter AA23">
+      <img class="intro-logo" src="assets/aa23-logo.png" alt="AA23 emblem" />
+      <button class="enter-button" id="enterButton" type="button">I SAY 23 <span aria-hidden="true">↗</span></button>
+      <p class="intro-note">ENTER THE WORLD OF AA23</p>
+    </section>
+
+    <section class="movie-content" id="movieContent" aria-label="AA23 movie information" aria-hidden="true">
+      <header class="topbar">
+      <a class="wordmark"
+   href="#top"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="AA23 home">
+  <img src="assets/aa23-logo.png" alt="AA23 Logo">
+</a>
+        <span class="topbar-label">#AA23</span>
+        <button class="sound-button" id="soundButton" type="button" aria-label="Mute video">SOUND ON</button>
+      </header>
+      <div class="movie-copy" id="top">
+        <p class="eyebrow reveal">Shoot Starts Soon..</p>
+        <h1 class="reveal">AA<span>23</span></h1>
+        <div class="gold-line reveal"></div>
+        <p class="movie-description reveal">Starring Icon Star Allu Arjun<br />Directed By Lokesh Kanagaraj</p>
+        <div class="socials reveal" aria-label="Social media">
+          <a href="https://www.instagram.com/AA23.movie/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @AA23.movie" class="social-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="fill-dot" cx="17.5" cy="6.7" r="1"/></svg>
+            <span>Instagram <small>@AA23.movie</small></span>
+          </a>
+          <a href="https://x.com/AA23movie" target="_blank" rel="noopener noreferrer" aria-label="X @AA23movie" class="social-link">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h4.8l11.2 18h-4.8L4 3Z"/><path d="M20 3 5 21M4 3l16 18"/></svg>
+            <span>X / Twitter <small>@AA23movie</small></span>
+          </a>
+        </div>
+      </div>
+      <footer class="footer reveal"><span>Mythri Movie Makers</span><span>MORE TO BE REVEALED</span></footer>
+    </section>
+    <p class="video-error" id="videoError" hidden>Add your video as <strong>video/aa23-background.mp4</strong> to play it here.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
